@@ -1,6 +1,6 @@
 # 🎮 Catálogo de Jogos
 
-Aplicação web responsiva que lista jogos gratuitos e promoções reais fazendo buscas em lojas oficiais como a Steam.
+Aplicação web responsiva que lista jogos gratuitos e promoções, fazendo buscas em lojas oficiais como a Steam e outras.
 
 ![screenshot](./imagens/preview.png)
 
