@@ -28,3 +28,5 @@ Aplicação web responsiva que lista jogos gratuitos e promoções reais fazendo
 1. Clone o repositório:
 ```bash
 git clone https://github.com/seu-usuario/nome-do-repo.git
+```
+2. Abra com Live Server no VSCode.
