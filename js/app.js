@@ -85,9 +85,9 @@ function renderizarJogosGratuitos() {
   }
 
   jogos.forEach(jogo => {
-   const card = document.createElement("div");
-   card.className = "col-12 col-sm-6 col-md-4 col-lg-3 mb-4";
-   card.innerHTML = `
+    const card = document.createElement("div");
+    card.className = "col-12 col-sm-6 col-md-4 col-lg-3 mb-4";
+    card.innerHTML = `
      <div class="card h-100">
        <a href="${jogo.game_url}" target="_blank" rel="noopener noreferrer">
          <img src="${jogo.thumbnail}" class="card-img-top" alt="${jogo.title}">
@@ -102,8 +102,8 @@ function renderizarJogosGratuitos() {
        </div>
      </div>
    `;
-   listaJogos.appendChild(card);
- });
+    listaJogos.appendChild(card);
+  });
 }
 
 function renderizarFavoritos() {
