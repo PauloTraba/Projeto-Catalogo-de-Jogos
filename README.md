@@ -42,16 +42,16 @@
 
 ### Acesso Online
 A maneira mais fácil é acessar a aplicação através do link do GitHub Pages:
-**https://[SEU-USUARIO].github.io/[NOME-DO-REPO]/**
+**https://paulotraba.github.io/Projeto-Catalogo-de-Jogos/**
 
 ### Ambiente Local
 Se preferir executar localmente:
 ```bash
 # 1. Clone o repositório
-git clone [https://github.com/](https://github.com/)[SEU-USUARIO]/[NOME-DO-REPO].git
+git clone https://github.com/PauloTraba/Projeto-Catalogo-de-Jogos.git
 
 # 2. Navegue até a pasta do projeto
-cd [NOME-DO-REPO]
+cd Projeto-Catalogo-de-Jogos
 
 # 3. Abra o arquivo index.html com o Live Server no VSCode ou qualquer outro servidor local.
 ```
