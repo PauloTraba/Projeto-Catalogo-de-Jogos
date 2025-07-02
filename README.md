@@ -5,7 +5,7 @@
 
 > Aplicação Web Progressiva (PWA) e responsiva que lista jogos gratuitos e promoções, consultando APIs públicas em tempo real.
 
-### 🔗 **https://paulotraba.github.io/Projeto-Catalogo-de-Jogos/**
+### 🔗 **[Acesse a versão online aqui!](https://paulotraba.github.io/Projeto-Catalogo-de-Jogos/)**
 
 ![Prévia do Catálogo de Jogos PWA](./imagens/preview.png)
 
