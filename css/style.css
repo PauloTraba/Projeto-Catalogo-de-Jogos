@@ -1,78 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body,
 html {
- margin: 0;
- padding: 0;
- font-family: 'Press Start 2P', cursive;
- background: url('../imagens/background.jpg') no-repeat center center fixed;
- background-size: cover;
- color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('../imagens/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
 }
 
 .app-container {
- background-color: rgba(0, 0, 0, 0.85);
- min-height: 100vh;
- padding-bottom: 60px;
+    background-color: rgba(0, 0, 0, 0.85);
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+header {
+  padding: 2.5rem 1rem; /* Aumenta o espaço interno (respiro) do cabeçalho */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Adiciona uma linha divisória sutil */
+  margin-bottom: 1.5rem; /* Aumenta a distância para o painel de controles */
 }
 
 header h1 {
- font-size: 1.2rem;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.2rem;
+  color: #fff; /* Cor de fallback para navegadores muito antigos */
+  margin-bottom: 0.5rem;
+  
+  /* Efeito especial de gradiente no texto */
+  background: linear-gradient(45deg, #ffffff, #b3b3b3);
+  -webkit-background-clip: text; /* Essencial para o efeito funcionar */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* A propriedade que faz a mágica acontecer nos navegadores WebKit */
 }
 
 .subtitulo {
- font-size: 0.6rem;
- color: #ccc;
+  font-size: 0.9rem; /* Subtítulo maior e mais legível */
+  color: #ccc;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; /* Uma espessura de fonte mais leve e elegante */
+  letter-spacing: 2px; /* Espaçamento entre as letras para um toque de estilo */
+  text-transform: uppercase; /* Tudo em maiúsculas */
 }
 
 .nav-tabs .nav-link {
- color: #fff;
- background-color: transparent;
- border: 1px solid #444;
- margin: 2px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #444;
+    margin: 2px;
 }
 
 .nav-tabs .nav-link.active {
- background-color: #0d6efd;
+    background-color: #0d6efd;
 }
 
 .container {
- max-width: 1200px;
- margin: auto;
+    max-width: 1200px;
+    margin: auto;
 }
 
 #filtrosExtras select {
- width: 200px;
- font-size: 0.6rem;
- font-family: 'Press Start 2P', cursive;
+    width: 200px;
+    font-size: 0.6rem;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .card {
- background-color: #222;
- border: 1px solid #555;
- color: white;
- height: 100%;
+    background-color: #222;
+    border: 1px solid #555;
+    color: white;
+    height: 100%;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    /* Aumenta o tamanho do card em 3% */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    /* Adiciona uma sombra mais pronunciada */
+    z-index: 10;
+    /* Garante que o card fique por cima dos outros */
 }
 
 .card-title {
- font-size: 0.8rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9rem;
 }
 
 .card-text {
- font-size: 0.7rem;
- min-height: 60px;
+    font-size: 0.8rem;
+    /* Um pouco maior para facilitar a leitura */
+    min-height: 50px;
+}
+
+.card .badge {
+  white-space: normal;   /* Permite que o texto quebre em várias linhas */
+  font-size: 0.8rem;
+  word-wrap: break-word; /* Garante a quebra de palavras se uma única palavra for muito longa */
+  text-align: left;      /* Alinha o texto à esquerda quando ele quebra a linha */
+  max-width: 100%;       /* Garante que a largura da badge não ultrapasse o contêiner */
+}
+
+.card-controls {
+  background-color: rgba(20, 20, 20, 0.5); /* Um fundo escuro e semitransparente */
+  border: 1px solid #555;
 }
 
 .btn-fav {
- font-size: 0.6rem;
- margin-top: 0.5rem;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
 }
 
 footer {
- background-color: #111;
- font-size: 0.6rem;
+    background-color: #111;
+    font-size: 0.6rem;
 }
 
-input::placeholder,
-select {
- font-size: 0.6rem;
- font-family: 'Press Start 2P', cursive;
+input,
+select,
+option {
+  font-family: 'Roboto', sans-serif !important; /* Usa a fonte limpa e !important para garantir a sobreposição */
+  font-size: 0.9rem !important;
+}
+
+input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    color: #bbb;
+}
+
+/* Animação para os cards aparecerem suavemente */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px); /* O card começa 15px para baixo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);    /* O card termina na sua posição normal */
+  }
+}
+
+/* Classe que aplica a animação */
+.card-fade-in {
+  /* O nome 'fadeIn' chama os keyframes que criamos acima */
+  animation: fadeIn 0.5s ease-out forwards;
 }

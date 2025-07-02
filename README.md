@@ -1,32 +1,66 @@
-# 🎮 Catálogo de Jogos
+# 🎮 Catálogo de Jogos PWA
 
-Aplicação web responsiva que lista jogos gratuitos e promoções, fazendo buscas em lojas oficiais como a Steam e outras.
+[![Licença: MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Status: Concluído](https://img.shields.io/badge/status-conclu%C3%ADdo-brightgreen.svg)]()
 
-![screenshot](./imagens/preview.png)
+> Aplicação Web Progressiva (PWA) e responsiva que lista jogos gratuitos e promoções, consultando APIs públicas em tempo real.
 
-## 🧰 Tecnologias utilizadas
+### 🔗 **[Acesse a versão online aqui!](https://[SEU-USUARIO].github.io/[NOME-DO-REPO]/)**
 
-- HTML5, CSS3 (mobile-first)
-- JavaScript (ES6+)
-- [FreeToGame API](https://www.freetogame.com/) - Para catalogar jogos.
-- [CheapShark API](https://www.cheapshark.com/) - Para inclusão dos preços.
-- Bootstrap 5
-- Google Fonts
+![Prévia do Catálogo de Jogos PWA](./imagens/preview.png)
 
-## 🔎 Funcionalidades
+---
 
-- ✅ Listagem de jogos gratuitos por gênero
-- ✅ Promoções com preços reais e loja (Steam, etc.)
-- ✅ Busca por título
-- ✅ Ordenação alfabética (A-Z / Z-A)
-- ✅ Favoritar jogos com `localStorage`
-- ✅ Filtros por gênero e loja
-- ✅ Layout responsivo e tema gamer
+## ✨ Funcionalidades Principais
 
-## 📦 Como executar o projeto
+- ✅ **Catálogo Dinâmico:** Listagem de jogos gratuitos e promoções de lojas como Steam, Epic Games, etc.
+- ✅ **Busca e Filtros:** Pesquisa por título, ordenação alfabética e filtros por gênero e loja.
+- ✅ **Favoritos:** Salve seus jogos preferidos para fácil acesso (utiliza `localStorage`).
+- ✅ **Interface Moderna:** Layout responsivo, tema gamer, animações suaves e feedback de carregamento.
 
-1. Clone o repositório:
+## 🚀 Funcionalidades PWA (Progressive Web App)
+
+- 📲 **Instalável:** Pode ser instalado em desktops e dispositivos móveis, funcionando como um aplicativo nativo.
+- 🌐 **Operação Offline:** Navegue pelo conteúdo já carregado mesmo sem conexão com a internet, graças ao Service Worker.
+- ⚡ **Rápido e Confiável:** Recursos em cache garantem um carregamento quase instantâneo nas visitas seguintes.
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5** e **CSS3** para estruturação e estilo (mobile-first).
+- **JavaScript (ES6+)** para toda a lógica e interatividade.
+- **Progressive Web App (PWA):**
+    - Web App Manifest
+    - Service Workers para cache e funcionalidade offline.
+- **APIs Externas:**
+    - [FreeToGame API](https://www.freetogame.com/api)
+    - [CheapShark API](https://www.cheapshark.com/api)
+- **Frameworks e Bibliotecas:**
+    - **Bootstrap 5** para componentes e layout responsivo.
+    - **Google Fonts** para tipografia (`Press Start 2P` e `Roboto`).
+
+## 📦 Como Executar o Projeto
+
+### Acesso Online
+A maneira mais fácil é acessar a aplicação através do link do GitHub Pages:
+**https://[SEU-USUARIO].github.io/[NOME-DO-REPO]/**
+
+### Ambiente Local
+Se preferir executar localmente:
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repo.git
+# 1. Clone o repositório
+git clone [https://github.com/](https://github.com/)[SEU-USUARIO]/[NOME-DO-REPO].git
+
+# 2. Navegue até a pasta do projeto
+cd [NOME-DO-REPO]
+
+# 3. Abra o arquivo index.html com o Live Server no VSCode ou qualquer outro servidor local.
 ```
-2. Abra com Live Server no VSCode.
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Paulo Traba**.
+
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/paulotraba/)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PauloTraba)
+
+---
